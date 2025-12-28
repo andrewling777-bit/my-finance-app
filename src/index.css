@@ -1,0 +1,113 @@
+:root {
+  --bg-color: #0d1117;
+  /* Very soft dark, almost black but warmer */
+  --card-bg: #161b22;
+  /* Slightly lighter for cards */
+  --text-primary: #e6edf3;
+  /* Soft white */
+  --text-secondary: #8b949e;
+  /* Muted grey */
+  --accent-primary: #79c0ff;
+  /* Soft Blue */
+  --success: #3fb950;
+  /* Green */
+  --danger: #ff7b72;
+  /* Soft Red */
+  --border-radius: 16px;
+  /* More rounded */
+  --spacing: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+input {
+  background: var(--bg-color);
+  border: 1px solid #334155;
+  color: var(--text-primary);
+  padding: 0.75rem;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Fix padding issue */
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-danger {
+  color: var(--danger);
+}
